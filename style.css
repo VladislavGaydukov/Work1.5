@@ -1,0 +1,244 @@
+
+  @font-face {
+    font-family: 'TT-lakes-normal';
+    src: url("./font/TTLakes-Regular.woff") format("woff");
+    font-style: normal;
+    font-weight: normal;
+  }
+
+  @font-face {
+    font-family:'TT-lakes-medium' ;
+    src: url('./font/TTLakes-Medium.woff') format('woff');
+    font-weight: medium;
+    font-style: normal;
+    }
+
+  * {
+    padding: 0;
+    margin: 0;
+  }
+  
+  body {
+    background-color: #F8F8F8;
+  }
+
+  .swiper {
+    overflow: visible;
+  }
+
+  .header {
+    background-color: #FFFFFF;
+    margin-bottom: 16px;
+  }
+
+  .header__title {
+    font-family: 'TT-lakes-normal';
+    color: #7E7E82;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    text-transform: uppercase;
+    padding: 16px;
+
+  }
+ 
+  .image-slide__wrapper {
+    padding-left: 16px;
+    position: relative;
+  }
+
+  .button-styling {
+    width: 240px;
+    height: 72px;
+    border: 1px solid #EAEAEA;
+    border-radius: 6px;
+    background-color: #FFFFFF;
+    box-sizing: border-box;
+    line-height: 72px;
+    padding-left: 16px;
+    position: relative;
+    
+  }
+
+.swiper .swiper-pagination {
+  position: absolute;
+  bottom: -50px;
+}
+
+.image-slider .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #B5B6BC;
+  --swiper-pagination-bullet-horizontal-gap: 6px;
+  
+}
+
+.button-styling img {
+  vertical-align: middle;
+}
+
+.button-styling::after {
+  position: absolute;
+  content: '';
+  height: 40px;
+  width: 40px;
+  border: 2px solid #FF3E79;
+  border-radius: 50%;
+  top: 16px;
+  right: 15px;
+ 
+}
+
+.button-styling::before {
+  position: absolute;
+  content: '';
+  width: 8px;
+  height: 8px;
+  rotate: -45deg;
+  top: 33px;
+  right: 34px;
+
+  border-bottom: 2px solid #FF3E79;
+  border-right: 2px solid #FF3E79;
+  border-radius: 1px;
+}
+
+.brand-container {
+  display: none;
+}
+
+.show-all,
+.hide {
+  display: none;
+}
+.show-all--visibility {
+  display: none;
+}
+
+@media (min-width: 767.9px){
+  .brand-bar--visibility{
+    display: none;
+  }
+
+  
+
+  .swiper-container {
+    display: none;
+  }
+
+  .brand-bar--desktop {
+    display: none;
+  }
+  
+  .brand-container {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    padding-left: 24px;
+  }
+  
+  .header {
+    margin-bottom: 24px
+  }
+
+  .brand-bar {
+  margin-right: 24px;
+  margin-bottom: 16px;
+  }
+
+  .button-styling {
+    width: 224px;
+  }
+
+  .link-styling {
+    display: block;
+    font-family: 'TT-lakes-medium';
+    text-decoration: none;
+    color:#1B1C21;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    margin-top: 8px;
+    margin-left: 57px;
+    position: absolute;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .show-all__styling::after {
+    position: absolute;
+    content: '';
+    width: 5px;
+    height: 5px;
+    rotate: 45deg;
+    top: 4px;
+    left: -17px;
+    border-right: 2px solid #41F6D7;
+    border-bottom: 2px solid #41F6D7;
+    border-radius: 1px;
+  }
+
+  .show-all__styling::before {
+    position: absolute;
+    content: '';
+    width: 5px;
+    height: 5px;
+    rotate: 45deg;
+    top: 10px;
+    left: -17px;
+    border-right: 2px solid #41F6D7;
+    border-bottom: 2px solid #41F6D7;
+    border-radius: 1px;
+  }
+
+  .hide-styling::after {
+    position: absolute;
+    content: '';
+    width: 5px;
+    height: 5px;
+    rotate: -135deg;
+    top: 6px;
+    left: -17px;
+    border-right: 2px solid #41F6D7;
+    border-bottom: 2px solid #41F6D7;
+    border-radius: 1px;
+  }
+
+  .hide-styling::before {
+    position: absolute;
+    content: '';
+    width: 5px;
+    height: 5px;
+    rotate:-135deg;
+    top: 12px;
+    left: -17px;
+    border-right: 2px solid #41F6D7;
+    border-bottom: 2px solid #41F6D7;
+    border-radius: 1px;
+  }
+}
+
+@media (min-width: 1119.9px) {
+  .brand-bar--desktop {
+    display: block;
+  }
+
+  .brand-container {
+    padding-left: 32px;
+  }
+
+  .brand-bar {
+    margin-right: 32px;
+  }
+  
+  .button-styling {
+    width: 240px;
+  }
+
+}
+
+  
+  
+ 
